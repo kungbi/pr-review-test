@@ -9,7 +9,7 @@ function calculateDiscount(amount) {
 }
 
 function calculateTax(amount) {
-  return amount * TAX_RATE;
+  return Math.round(amount * TAX_RATE * 100) / 100;
 }
 
 function processPayment(amount) {
